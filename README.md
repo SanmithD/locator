@@ -1,12 +1,75 @@
-# React + Vite
+# 🧭 Smart Travel Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based PWA that provides real-time **location tracking**, **network diagnostics**, and **battery status monitoring** – perfect for travelers and field agents.
 
-Currently, two official plugins are available:
+![Smart Travel Assistant Screenshot](./path-to-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📍 **Your Location**
+  - Latitude, longitude, and reverse geocoded address using device geolocation.
+- 📶 **Network Status**
+  - Displays connection type (4G/5G), downlink speed, and round-trip time (RTT).
+- 🔋 **Battery Monitor**
+  - Real-time battery level updates and charging status using the Battery API.
+- 🔁 **Background Sync**
+  - Simulates syncing of data or configurations in the background.
+- 🗺️ **Interactive Map**
+  - Uses Leaflet with React Leaflet to show your current position on a live map.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+| Tech              | Purpose                              |
+|-------------------|--------------------------------------|
+| **React 19**      | Core UI Framework                    |
+| **Vite**          | Frontend build tool                  |
+| **TailwindCSS**   | Utility-first styling                |
+| **Zustand**       | State management                     |
+| **React Leaflet** | Interactive maps                     |
+| **Lucide React**  | Icon library                         |
+| **Axios**         | HTTP requests                        |
+| **DaisyUI**       | Tailwind component library           |
+
+---
+
+## 📁 Folder Structure
+
+```bash
+src/
+│
+├── components/             # Reusable UI components
+│   ├── BatteryStatus.jsx   # Battery logic and UI
+│   └── Map.jsx             # Leaflet-based map component
+│
+├── store/
+│   └── UseLocation.js      # Zustand store for all app state
+│
+├── App.jsx                 # Main application file
+├── index.css               # Global styles
+└── main.jsx                # App entry point
+
+```
+### Setup Instructions
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/locator.git
+cd locator
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+npm run build
+
+```
+
+### Create a .env file in the root for storing environment-specific variables (if needed for APIs)
+VITE_SOME_KEY=value
+
+### Created by
+Create by Sanmith Devadiga
+
+

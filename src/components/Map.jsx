@@ -2,7 +2,7 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const Map = ({ lat, lon }) => {
-  if (lat == null || lon == null) return <p>Loading map...</p>;
+  if (lat == null || lon == null) return <div className="h-screen flex justify-center items-center" ><p className="skeleton h-full w-full" ></p></div>;
   return (
     <MapContainer
       center={[lat, lon]}
