@@ -2,7 +2,7 @@
 
 A React-based PWA that provides real-time **location tracking**, **network diagnostics**, and **battery status monitoring** – perfect for travelers and field agents.
 
-![Smart Travel Assistant Screenshot](./path-to-screenshot.png)
+![Smart Travel Assistant Screenshot]<img width="1284" height="614" alt="Image" src="https://github.com/user-attachments/assets/19fe36a8-5277-4e80-80cc-08f2c7e4956b" />
 
 ## 🚀 Features
 
